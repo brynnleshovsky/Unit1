@@ -1,27 +1,25 @@
 package app;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-    String person1 = "my cat";
-    String person2 = "Jeff Bezos";
-    String verb1 = "programming";
-    String verb2 = "cleaning";
-    String verb3 = "watching harry potter";
-    String food = "lutefisk";
-    String dayOfWeek = "Tuesdays";
-    String place1 = "Tahiti";
-    String place2 = "jail";
-    String adjective1 = "gross";
-    String adjective2 = "amazing";
-    System.out.println("The world's richest person is " + person1 + ".");
-    System.out.println(person1 + " spends their time " + verb3 + " in " + place1 + ".");
-    System.out.println(verb1 + " is something they are extremely gifted in.");
-    System.out.println(person1 + " is so very " + adjective2 + ".");
-    System.out.println(person2 + " on the other hand is so " + adjective1 + " and they are very poor.");
-    System.out.println("On " + dayOfWeek + " they spend hours " + verb2 + " for " + person1 + ".");
-    System.out.println(person2 + " lives in " + place2 + " and only gets to eat "+ food + ".");
+   Scanner input = new Scanner(System.in);
 
+   System.out.println("Please enter your first name.");
+   String name  = input.nextLine();
 
-     
+   System.out.println("Hello, " + name);
+   System.out.println("Please enter your last name.");
+   String lastName = input.nextLine();
+   System.out.println("Nice to meet you, " + name + " " + lastName);
+   System.out.println("Please enter your age , " + name);
+   String age = input.nextLine();
+   System.out.println("thanks for sharing.");
+   System.out.println("Now, what grade are you in?");
+   String grade = input.nextLine();
+   System.out.println("Great! We are almost done, " + name);
+   System.out.println("One last thing, what is your favorite color?");
+   String favColor = input.nextLine(); 
+   System.out.println("Alright " + name + " " + lastName + "," + " you are " +  age + ", in grade " + grade + ", and your favorite color is " + favColor + ".");
     }
 }
