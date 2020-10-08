@@ -6,143 +6,146 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
 
-        int score = 0;
 
-        System.out.println("Welcome to your quiz. Before we start, any string answers must have the first letter capitalized to be counted correct. Let's begin.");
+        System.out.println("Hello! Are you ready to learn about dogs?");
+        System.out.println("Please enter a number 1-5 to get your first fact.");
+        int inputNum = input.nextInt();
 
+        String fact1 = "A dog's sense of smell is 50 times stronger than a humans!";
+        String fact2 = "Fun fact: Three dogs survived the sinking of the titanic... first class perks.";
+        String fact3 = "Around 30% of dalmations are deaf in one ear due to a gene mutation";
+        String fact4 = "A dog's nose print is unique to only that dog, much like human finger prints.";
+        String fact5 = "45% of American dogs sleep in their owner's bed each night";
 
+        if(inputNum == 1){
+            System.out.println(fact1);
+        }
+    
 
-        System.out.println("Question 1: how many siblings do I have?");
-        int sibs = input.nextInt();
-        input.nextLine();
-        int sibsA = 1;
-
-        if (sibs == sibsA){
-            System.out.println("Correct.");
-            score = score +1;
+        if(inputNum == 2){
+            System.out.println(fact2);
         }
 
-        else{
-            System.out.println("incorrect");
+        if(inputNum == 3){
+            System.out.println(fact3);
         }
 
-        System.out.println("Question two: What is my favorite food?");
-        String food = input.nextLine();
-        String foodA = "Peanuts";
-
-        if (food.equals(foodA)){
-            System.out.println("Correct.");
-            score = score +1;
+        if(inputNum == 4){
+            System.out.println(fact4);
         }
 
-        else {
-            System.out.println("Incorect");
+        if(inputNum == 5){
+            System.out.println(fact5);
         }
 
-        System.out.println("Question 3: What is my favorite beverage?");
-        String favBev = input.nextLine();
-        String favBevA = "Water";
+        System.out.println("Hopefully you learned something new from your first fact, onto round 2.");
+        System.out.println("Please enter a different number 1-5 for a new fact.");
+        int roundTwo = input.nextInt();
 
-        if (favBev.equals(favBevA)){
-            System.out.println("Correct.");
-            score = score +1;
+         if(roundTwo == 1){
+            System.out.println(fact1);
+        }
+    
+
+        if(roundTwo == 2){
+            System.out.println(fact2);
         }
 
-        else{
-
-            System.out.println("Incorrect");
+        if(roundTwo == 3){
+            System.out.println(fact3);
         }
 
-        System.out.println("Question 4: What is my favorite dog breed?");
-        String favDog = input.nextLine();
-        String favDogA = "Samoyed";
-
-        if (favDog.equals(favDogA)){
-            System.out.println("Correct.");
-             score = score +1;
+        if(roundTwo == 4){
+            System.out.println(fact4);
         }
 
-        else{
-            System.out.println("Incorrect.");
-        }
-        
-        System.out.println("Question five: What is my favorite season?");
-        String favSeas = input.nextLine();
-        String favSeasA = "Fall";
-
-        if (favSeas.equals(favSeasA)){
-            System.out.println("Correct.");
-             score = score +1;
-        }
-
-        else{
-            System.out.println("Incorrect");
-        }
-
-        System.out.println("Question 6: true or false? My favorite subject is math");
-        boolean favSub = input.nextBoolean();
-        input.nextLine();
-        boolean favSubA = false;
-
-        if(favSub == favSubA){
-            System.out.println("Correct.");
-            score = score + 1;
-        }
-
-        System.out.println("Question 7: What is my first pet's name?");
-        String firstPet = input.nextLine();
-        String firstPetA = "Earl";
-
-        if(firstPet.equals(firstPetA)){
-            System.out.println("Correct.");
-            score = score + 1;
-        }
-
-        else{
-            System.out.println("incorrect");
-        }
-
-        System.out.println("Question 8: What smell do I hate most?");
-        String hateSmell = input.nextLine();
-        String hateSmellA ="Pickles";
-
-        if(hateSmell.equals(hateSmellA)){
-            System.out.println("Correct.");
-            score = score + 1;
-        }
-
-        else{
-            System.out.println("Incorrect.");
-        }
-
-        System.out.println("Question 9: True or False? I like the Ocean");
-        boolean ocean = input.nextBoolean();
-        boolean oceanA = false;
-
-        if(ocean == oceanA){
-            System.out.println("Correct.");
-            score = score + 1;
-        }
-
-        else{
-            System.out.println("Incorrect.");
-        }
-
-        System.out.println("Question 10: True or False? I can't think of another question");
-        boolean thinkQ = input.nextBoolean();
-        boolean thinkQA = true;
-
-        if(thinkQ == thinkQA){
-            System.out.println("Correct.");
-            score = score + 1;
-        }
-
-        else{
-            System.out.println("Incorrect.");
+        if(roundTwo == 5){
+            System.out.println(fact5);
         }
 
 
-        System.out.println("Well done. You score is " + score + "/10");
+        System.out.println("Round 3:");
+        System.out.println("Please enter a different number 1-5 for a new fact.");
+        int roundThree = input.nextInt();
+
+        if(roundThree == 1){
+            System.out.println(fact1);
+        }
+    
+
+        if(roundThree == 2){
+            System.out.println(fact2);
+        }
+
+        if(roundThree == 3){
+            System.out.println(fact3);
+        }
+
+        if(roundThree == 4){
+            System.out.println(fact4);
+        }
+
+        if(roundThree == 5){
+            System.out.println(fact5);
+        }
+
+
+         System.out.println("Round 4:");
+        System.out.println("Please enter a different number 1-5 for a new fact.");
+        int roundFour = input.nextInt();
+        if(roundFour == 1){
+            System.out.println(fact1);
+        }
+    
+
+        if(roundFour == 2){
+            System.out.println(fact2);
+        }
+
+        if(roundFour == 3){
+            System.out.println(fact3);
+        }
+
+        if(roundFour == 4){
+            System.out.println(fact4);
+        }
+
+        if(roundFour == 5){
+            System.out.println(fact5);
+        }
+
+        System.out.println("Last but not least, Round 5:");
+        System.out.println("Please enter a different number 1-5 for a new fact.");
+        int roundFive = input.nextInt();
+
+        if(roundFive == 1){
+            System.out.println(fact1);
+        }
+    
+
+        if(roundFive == 2){
+            System.out.println(fact2);
+        }
+
+        if(roundFive == 3){
+            System.out.println(fact3);
+        }
+
+        if(roundFive == 4){
+            System.out.println(fact4);
+        }
+
+        if(roundFive == 5){
+            System.out.println(fact5);
+        }
+
+        System.out.println("Thank you so much for listening to some (hopefully) interesting dog facts.");
+        System.out.println("Bonus fact: the world's oldest dog lived to 29 years old!");
+        System.out.println("That is all I have for you. Have a great day :)");
+
+
+
+
 
      }
     }
