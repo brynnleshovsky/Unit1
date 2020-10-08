@@ -38,6 +38,10 @@ public class App {
             System.out.println(fact5);
         }
 
+        else{
+            System.out.println("Error. You have enetred a number that is not between 1 and 5. Please restart and try again.");
+        }
+
         System.out.println("Hopefully you learned something new from your first fact, onto round 2.");
         System.out.println("Please enter a different number 1-5 for a new fact.");
         int roundTwo = input.nextInt();
@@ -61,6 +65,10 @@ public class App {
 
         if(roundTwo == 5){
             System.out.println(fact5);
+        }
+
+        else{
+            System.out.println("Error. You have enetred a number that is not between 1 and 5. Please restart and try again.");
         }
 
 
@@ -89,6 +97,10 @@ public class App {
             System.out.println(fact5);
         }
 
+        else{
+            System.out.println("Error. You have enetred a number that is not between 1 and 5. Please restart and try again.");
+        }
+
 
          System.out.println("Round 4:");
         System.out.println("Please enter a different number 1-5 for a new fact.");
@@ -112,6 +124,11 @@ public class App {
 
         if(roundFour == 5){
             System.out.println(fact5);
+
+        }
+
+        else{
+            System.out.println("Error. You have enetred a number that is not between 1 and 5. Please restart and try again.");
         }
 
         System.out.println("Last but not least, Round 5:");
@@ -137,6 +154,9 @@ public class App {
 
         if(roundFive == 5){
             System.out.println(fact5);
+        }
+        else{
+            System.out.println("Error. You have enetred a number that is not between 1 and 5. Please restart and try again.");
         }
 
         System.out.println("Thank you so much for listening to some (hopefully) interesting dog facts.");
