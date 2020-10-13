@@ -5,32 +5,22 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
-        int secretNum = 40;
-        boolean finished = false;
+        System.out.println("Hi! Please input 2 different numbers. I will print out all of the even numbers between the two you input.");
+        int num1 = input.nextInt();
+        int num2 = input.nextInt();
 
-        while(finished == false){
-            System.out.println("Please guess a number 1-100.");
-            int guess = input.nextInt();
-            input.nextLine();
-
-            if(guess == secretNum){
-                System.out.println("You are correct! 40 was the secret number.");
-                finished = true;
-            }
+        while (num1 < num2 -2){
+                if(num1 % 2 == 0){
+                    num1 = num1 +2;
+                    
+            System.out.println(num1);
+                    }
 
             else{
-
-                if(guess > secretNum){
-                    System.out.println("Nope. Your guess is too high.");
-                }
-
-                else{
-                    System.out.println("Incorrect. Your guess is too low.");
-                }
+                num1 = num1 +1;
+                System.out.println(num1);
             }
         }
-
-
-
+        System.out.println("That's it! Press run to play again."); 
             }
         }
