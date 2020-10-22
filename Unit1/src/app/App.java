@@ -5,9 +5,12 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
-        System.out.println("Hi! Please input 2 different numbers. I will print out all of the even numbers between the two you input.");
+        System.out.println("Hi! Please input any number");
         int num1 = input.nextInt();
+        input.nextLine();
+        System.out.println("Please enter a higher number. I will print out all of the even numbers between the two you input.");
         int num2 = input.nextInt();
+        input.nextLine();
 
         while (num1 < num2 -2){
                 if(num1 % 2 == 0){
